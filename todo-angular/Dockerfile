@@ -14,7 +14,7 @@ COPY nginx/nginx.conf /etc/nginx/nginx.conf
 # SSL - these two directive install the SSL configuration file
 # This copies the Diffie-Hellman settings. Used by NGinx
 COPY nginx/dhparam.pem /etc/ssl/conf/dhparam.pem
-COPY nginx/conf.d/ssl.conf /etc/nginx/conf.d/ssl.conf
+## COPY nginx/conf.d/ssl.conf /etc/nginx/conf.d/ssl.conf
 ## End of SSL
 
 RUN touch /run/nginx.pid \
